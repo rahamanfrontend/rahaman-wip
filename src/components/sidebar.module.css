@@ -1,0 +1,12 @@
+.active svg path {
+   @apply fill-primary-500;
+}
+
+
+
+.menu svg path {
+   @apply fill-gray-500;
+}
+.menu:hover svg path {
+   @apply fill-primary-500;
+}
