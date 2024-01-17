@@ -17,7 +17,7 @@ const SingleUserProfile = ({
 }: ISingleUserProfileProps) => {
    return (
       <div className="flex items-center gap-3 w-full border-b py-5 px-6 border-gray-200">
-         <div className="w-10 h-10 rounded-full relative">
+         <div className="w-10 min-w-10 min-h-10 h-10 rounded-full relative">
             <Image
                src={avater}
                width={40}

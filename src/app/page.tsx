@@ -213,7 +213,7 @@ export default function Home() {
             <OverviewCard className="!p-0 lg:col-span-3 ">
                <div className="p-6 border-b border-gray-200 flex  items-center justify-between">
                   <Typography variant="SemiBold_H5" className="text-gray-900">
-                     Quick Actions
+                     Recent Consultations
                   </Typography>
                   <Typography
                      variant="SemiBold_H5"

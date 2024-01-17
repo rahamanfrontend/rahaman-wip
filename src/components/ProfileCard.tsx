@@ -44,7 +44,7 @@ const ProfileCard = ({}) => {
             </Typography>
          </div>
          <div className="pb-1  grid grid-cols-1 md:grid-cols-3  ">
-            <div className="border-r border-gray-200 pl-6 pt-6 py-[29px] ">
+            <div className=" md:border-r border-b md:border-b-0 order-gray-200 pl-6 pt-6 py-[29px] ">
                <div className="w-16 h-16 rounded-full  mb-3 ">
                   <Image
                      src={avater}
