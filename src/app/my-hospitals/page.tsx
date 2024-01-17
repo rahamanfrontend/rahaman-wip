@@ -39,7 +39,7 @@ const Consultant = ({}) => {
    const [selected, setSelected] = useState("all-hospitals");
    return (
       <main>
-         <div className="flex justify-between items-center">
+         <div className="flex flex-col gap-3 sm:flex-row justify-between items-start sm:items-center">
             <Typography variant="SemiBold_H5" className="text-black">
                My Hospitals
             </Typography>
@@ -63,7 +63,7 @@ const Consultant = ({}) => {
                </Typography>
             </Button>
          </div>
-         <div className="flex items-center justify-start gap-3 pt-[22px] pb-10">
+         <div className="flex flex-col sm:flex-row items-center justify-start gap-3 pt-[22px] pb-10">
             {menuList.map((menu, idx) => (
                <HospitalInfoCard
                   key={idx}

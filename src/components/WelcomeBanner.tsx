@@ -6,8 +6,8 @@ interface Props {}
 
 const WelcomeBanner = ({}) => {
    return (
-      <div className="flex items-center justify-between">
-         <div className="flex flex-col items-start gap-1">
+      <div className="flex flex-col gap-3 sm:flex-row items-center justify-between">
+         <div className="flex flex-col items-start gap-1  md:w-auto">
             <Typography className="text-black" variant="SemiBold_H4">
                Welcome David
             </Typography>
@@ -16,7 +16,7 @@ const WelcomeBanner = ({}) => {
                health 😊
             </Typography>
          </div>
-         <div>
+         <div className="w-full sm:w-auto">
             <OverviewCard>
                <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 ">

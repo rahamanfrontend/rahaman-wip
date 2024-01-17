@@ -38,7 +38,7 @@ const ProfileLeft = ({}) => {
                   prefix={<EmailIcon></EmailIcon>}
                   name="email"
                ></InputBox>
-               <div className=" flex gap-4 items-center justify-center">
+               <div className=" flex gap-4 flex-col sm:flex-row items-center justify-center">
                   <Button
                      variant="outline"
                      className="capitalize text-primary-400 outline-primary-400 rounded-md px-6 py-4 w-full"

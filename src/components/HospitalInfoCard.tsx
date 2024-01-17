@@ -21,7 +21,7 @@ const HospitalInfoCard = ({
    return (
       <Button
          onClick={() => setSelected(label)}
-         className={` hover:outline-primary-75  border group hover:bg-primary-50 ${
+         className={` hover:outline-primary-75 w-full sm:w-auto border group hover:bg-primary-50 ${
             selected === label
                ? `border-primary-75  bg-primary-50 ${styles.active}`
                : `border-gray-300  bg-gray-100 ${styles.menu}`

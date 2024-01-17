@@ -33,8 +33,8 @@ const ProfileRight = ({}) => {
                   prefix={<LockerIcon></LockerIcon>}
                   name="newPassword"
                ></InputBox>
-               <div className=" flex gap-4 items-center justify-end">
-                  <Button className="  capitalize bg-primary-400 text-white rounded-md px-6 py-4 ">
+               <div className=" flex gap-4 items-center justify-center sm:justify-end">
+                  <Button className=" w-full sm:w-auto capitalize bg-primary-400 text-white rounded-md px-6 py-4 ">
                      update password
                   </Button>
                </div>

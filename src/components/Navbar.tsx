@@ -1,11 +1,24 @@
+"use client";
 import Image from "next/image";
 import Search from "./Search";
 import avater from "../../public/avater.jpeg";
+import { VscThreeBars } from "react-icons/vsc";
+import { useAppDispatch } from "@/redux/hook";
+import { toggleMenu } from "@/redux/features/menuSlice";
+
 const Navbar = () => {
+   const dispatch = useAppDispatch();
    return (
       <header className="flex px-9 items-center justify-between py-3 w-full bg-white">
-         <div>
-            <Search></Search>
+         <div className="flex items-center justify-center gap-3">
+            <VscThreeBars
+               className="block lg:hidden"
+               size={20}
+               onClick={() => dispatch(toggleMenu())}
+            />
+            <div >
+               <Search></Search>
+            </div>
          </div>
          <div className="flex items-center gap-3 ml-auto">
             <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 ">

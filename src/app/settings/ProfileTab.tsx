@@ -5,7 +5,7 @@ interface Props {}
 
 const ProfileTab = ({}) => {
    return (
-      <div className="grid grid-cols-2 gap-5 mt-4 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-4 ">
          <ProfileLeft></ProfileLeft>
          <div className="bg-transparent">
             <ProfileRight></ProfileRight>

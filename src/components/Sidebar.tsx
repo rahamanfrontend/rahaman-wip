@@ -24,6 +24,9 @@ import avater from "../../public/avater.jpeg";
 // ** import components:
 import Typography from "@/components/typography";
 import Image from "next/image";
+import { useAppDispatch, useAppSelector } from "@/redux/hook";
+import { VscThreeBars } from "react-icons/vsc";
+import { toggleMenu } from "@/redux/features/menuSlice";
 
 const sidebarAboveMenus = [
    {
@@ -137,9 +140,22 @@ const paths = [
 
 const Sidebar = ({}) => {
    const pathname = usePathname();
+   const { open } = useAppSelector((state) => state.menu);
+   const dispatch = useAppDispatch();
    return (
       <>
-         <div className="py-6 w-[272px] min-w-[272px] border-r bg-white border-gray-200 h-screen flex flex-col justify-between">
+         <div
+            className={`${
+               open ? "fixed md:top-0 md:left-0" : " fixed left-[-999px] top-0"
+            } duration-500 lg:static py-6 w-[272px] min-w-[272px] border-r bg-white border-gray-200 h-screen flex flex-col justify-between z-50`}
+         >
+            <div className="px-8 top-0 right-0 absolute">
+               <VscThreeBars
+                  className="block lg:hidden"
+                  size={20}
+                  onClick={() => dispatch(toggleMenu())}
+               />
+            </div>
             <div>
                <div className="py-2 px-6">
                   <Image width={224} height={40} alt="logo" src={logo}></Image>

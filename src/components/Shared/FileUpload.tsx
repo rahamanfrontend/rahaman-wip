@@ -10,35 +10,38 @@ const FileUpload = ({}) => {
             backgroundImage: `url(${fileBg.src})`,
             backgroundPosition: "left center",
             display: "block",
-            backgroundSize: "auto 100%",
+            backgroundSize: "45% 100%",
          }}
          className={`border border-dashed bg-no-repeat  rounded-[10px] py-5  px-4    `}
       >
          <input type="file" id="image" className="hidden" />
          <label htmlFor="image">
             <div className="py-8  flex gap-4 items-center ">
-               <PngIcon></PngIcon>
+               <div className="hidden sm:block">
+                  <PngIcon></PngIcon>
+               </div>
                <div className=" flex-1 flex flex-col gap-[6px]">
                   <Typography variant="Medium_H7" className="text-gray-800">
                      Uploading Profile Image
                   </Typography>
                   <Progress
                      value={45}
-                     className="bg-gray-100 [&_.progress]:bg-success-300"
+                     className="bg-gray-100  [&_.progress]:bg-success-300"
                   />
 
-                  <div className="gap-[2px] flex items-center">
+                  <div className="gap-[2px] flex  flex-col sm:flex-row  items-row sm:items-center">
                      <Typography
                         variant="Regular_H7"
-                        className="text-oneTime-100 text-[11px]"
+                        className="text-oneTime-100 text-[10px]  md:text-[11px]"
                      >
                         Profilepic2.PNG
                      </Typography>
                      <Typography
                         variant="Regular_H7"
-                        className="text-oneTime-0 text-[11px]"
+                        className="text-oneTime-0 text-[10px] md:text-[11px]"
                      >
-                        | 45% Completed
+                        <span className="hidden sm:inline-block mr-1">|</span>
+                        45% Completed
                      </Typography>
                   </div>
                </div>

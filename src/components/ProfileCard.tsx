@@ -60,7 +60,7 @@ const ProfileCard = ({}) => {
                ></TitleGroup>
             </div>
             <div className="col-span-2 p-6">
-               <div className="grid grid-cols-4 gap-[29px]">
+               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                   {userDetailsList.map((item, idx) => (
                      <TitleGroup
                         className="!flex-col-reverse"

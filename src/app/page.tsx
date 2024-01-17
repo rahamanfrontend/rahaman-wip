@@ -103,9 +103,9 @@ export default function Home() {
    return (
       <div>
          <WelcomeBanner></WelcomeBanner>
-         <div className="mt-10 grid grid-cols-3 items-start gap-4 ">
-            <div className=" col-span-2">
-               <div className=" grid grid-cols-3 gap-4 ">
+         <div className="mt-10 grid  grid-cols-1 lg:grid-cols-3 items-start gap-4 ">
+            <div className=" lg:col-span-2">
+               <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 ">
                   {metricsList.map((item, idx) => (
                      <MetricsCard
                         key={idx}
@@ -175,8 +175,8 @@ export default function Home() {
                      </div>
                   </div>
                </div>
-               <div className="flex gap-2  items-center p-6 !pt-5">
-                  <Button className="!px-4 !py-2 bg-white !rounded-md !border !border-gray-200 outline-none">
+               <div className="flex flex-col sm:flex-row gap-3 sm:gap-2  items-center p-6 !pt-5">
+                  <Button className="!px-4 !py-2 bg-white !rounded-md !border !border-gray-200 outline-none w-full sm:w-auto">
                      <Typography
                         variant="SemiBold_H7"
                         className="text-gray-700"
@@ -184,7 +184,7 @@ export default function Home() {
                         Reschedule
                      </Typography>
                   </Button>
-                  <Button className="!px-4 !py-2 !rounded-md bg-primary-500">
+                  <Button className="!px-4 !py-2 w-full sm:w-auto !rounded-md bg-primary-500">
                      <Typography variant="SemiBold_H7" className="text-white">
                         Confirm appointment
                      </Typography>
@@ -192,8 +192,8 @@ export default function Home() {
                </div>
             </OverviewCard>
          </div>
-         <div className="grid grid-cols-5 gap-3 mt-4">
-            <OverviewCard className="!p-0  col-span-2">
+         <div className="grid grid-cols-1 lg:grid-cols-5 gap-3 mt-4">
+            <OverviewCard className="!p-0  lg:col-span-2">
                <div className="p-6 border-b border-gray-200">
                   <Typography variant="SemiBold_H5" className="text-gray-900">
                      Quick Actions
@@ -210,7 +210,7 @@ export default function Home() {
                   ))}
                </div>
             </OverviewCard>
-            <OverviewCard className="!p-0 col-span-3 ">
+            <OverviewCard className="!p-0 lg:col-span-3 ">
                <div className="p-6 border-b border-gray-200 flex  items-center justify-between">
                   <Typography variant="SemiBold_H5" className="text-gray-900">
                      Quick Actions
@@ -248,7 +248,10 @@ export default function Home() {
                                  variant="SemiBold_H7"
                                  className="text-gray-700"
                               >
-                                 Send Message
+                                 <span className="hidden lg:inline-block mr-1">
+                                    Send
+                                 </span>
+                                 Message
                               </Typography>
                            </Button>
                         </SingleUserProfile>

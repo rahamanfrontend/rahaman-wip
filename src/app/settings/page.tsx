@@ -34,7 +34,7 @@ const Page = ({}) => {
                Control your profile setup and integrations
             </Typography>
          </div>
-         <div className="flex items-center justify-start border-b border-gray-200">
+         <div className="flex items-center w-full overflow-x-scroll md:overflow-x-hidden justify-start border-b border-gray-200">
             {settingsMenu.map((menu, idx) => (
                <div
                   key={idx}
