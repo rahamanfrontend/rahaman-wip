@@ -1,8 +1,12 @@
-import { Progress } from "@heathmont/moon-core-tw";
+// ** import assets:
 import { PngIcon } from "../../../public/assets/svg/profileIcon";
-import Typography from "../typography";
-import { IoCloseSharp } from "react-icons/io5";
 import fileBg from "../../../public/assets/Overlay.png";
+// ** import third party :
+import { Progress } from "@heathmont/moon-core-tw";
+import { IoCloseSharp } from "react-icons/io5";
+
+// ** import components:
+import Typography from "../typography";
 const FileUpload = ({}) => {
    return (
       <div

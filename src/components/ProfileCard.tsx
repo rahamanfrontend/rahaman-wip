@@ -1,9 +1,12 @@
+// ** import core packages:
 import Image from "next/image";
+// ** import assets:
+import avater from "../../public/avater.jpeg";
+
+// ** import cards :
 import OverviewCard from "./overviewCard";
 import Typography from "./typography";
-import avater from "../../public/avater.jpeg";
 import TitleGroup from "./TitleGroup";
-interface Props {}
 
 const userDetailsList = [
    {

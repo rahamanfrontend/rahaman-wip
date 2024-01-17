@@ -2,8 +2,10 @@
 
 //  ** import core packages:
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
-
+// ** import icons:
+import { VscThreeBars } from "react-icons/vsc";
 // ** import assets:
 import {
    HomeIcon,
@@ -23,9 +25,9 @@ import logo from "../../public/assets/rayna.svg";
 import avater from "../../public/avater.jpeg";
 // ** import components:
 import Typography from "@/components/typography";
-import Image from "next/image";
+
+// ** import state management:
 import { useAppDispatch, useAppSelector } from "@/redux/hook";
-import { VscThreeBars } from "react-icons/vsc";
 import { toggleMenu } from "@/redux/features/menuSlice";
 
 const sidebarAboveMenus = [

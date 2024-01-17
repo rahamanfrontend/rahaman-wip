@@ -1,7 +1,8 @@
+//  ** import core packages:
 import Image from "next/image";
-import Typography from "./typography";
 import { ReactNode } from "react";
-
+// ** import components:
+import Typography from "./typography";
 interface ISingleUserProfileProps {
    avater: any;
    name: string;

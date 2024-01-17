@@ -1,6 +1,13 @@
 "use client";
-import Typography from "@/components/typography";
+
+
+// ** import core packages: 
 import { useState } from "react";
+
+// ** import components: 
+import Typography from "@/components/typography";
+
+// ** import sub-page/ sections: 
 import ProfileTab from "./ProfileTab";
 
 const settingsMenu = [

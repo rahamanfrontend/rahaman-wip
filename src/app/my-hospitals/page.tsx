@@ -1,15 +1,17 @@
 "use client";
-import Typography from "@/components/typography";
-import { Button } from "@heathmont/moon-core-tw";
-import { NextPage } from "next";
-import {
-   FavoriteIcon,
-   MetricesIcon1,
-   WatchIcon,
-} from "../../../public/assets/svg/Metrices";
+
+// ** import core packages:
 import { useState } from "react";
-import HospitalInfoCard from "@/components/HospitalInfoCard";
+
+// ** import assets:
+import { FavoriteIcon, WatchIcon } from "../../../public/assets/svg/Metrices";
 import { Plus } from "../../../public/assets/svg/SidebarIcon";
+import { Button } from "@heathmont/moon-core-tw";
+// ** import components:
+import Typography from "@/components/typography";
+import HospitalInfoCard from "@/components/HospitalInfoCard";
+
+// ** import sub page/ sections:
 import CustomTable from "./table";
 
 interface Props {}

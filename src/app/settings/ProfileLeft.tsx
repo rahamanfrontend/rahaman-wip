@@ -1,13 +1,13 @@
+// ** import assets:
+import { EmailIcon, UserIcon } from "../../../public/assets/svg/profileIcon";
+
+// ** import third party packages:
+import { Button } from "@heathmont/moon-core-tw";
+
+// ** import components:
 import Typography from "@/components/typography";
-import {
-   EmailIcon,
-   PngIcon,
-   UserIcon,
-} from "../../../public/assets/svg/profileIcon";
 import FileUpload from "@/components/Shared/FileUpload";
 import InputBox from "@/components/Shared/InputBox";
-import { MetricesIcon1 } from "../../../public/assets/svg/Metrices";
-import { Button } from "@heathmont/moon-core-tw";
 
 const ProfileLeft = ({}) => {
    return (

@@ -1,6 +1,8 @@
 "use client";
-import MetricsCard from "@/components/MetricesCard";
-import WelcomeBanner from "@/components/WelcomeBanner";
+
+// ** import core packages: 
+import Image from "next/image";
+// ** import assets: 
 import {
    MetricesIcon1,
    MetricesIcon2,
@@ -15,14 +17,19 @@ import {
    QuickActionIcon3,
    QuickActionIcon4,
 } from "../../public/assets/svg/QuickActionSvg";
+import avater from "../../public/avater.jpeg";
+
+// ** import third party : 
+import { Button } from "@heathmont/moon-core-tw";
+
+// ** import components: 
+import MetricsCard from "@/components/MetricesCard";
+import WelcomeBanner from "@/components/WelcomeBanner";
 import ProfileCard from "@/components/ProfileCard";
 import OverviewCard from "@/components/overviewCard";
-import Typography from "@/components/typography";
-import avater from "../../public/avater.jpeg";
-import Image from "next/image";
-import { Button } from "@heathmont/moon-core-tw";
 import QuickActionCard from "@/components/QuickActionCard";
 import SingleUserProfile from "@/components/SingleUserProfile";
+import Typography from "@/components/typography";
 
 const metricsList = [
    {

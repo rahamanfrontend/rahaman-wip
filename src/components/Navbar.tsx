@@ -1,8 +1,15 @@
 "use client";
+
+// ** import core packages
 import Image from "next/image";
-import Search from "./Search";
-import avater from "../../public/avater.jpeg";
+// ** import icons:
 import { VscThreeBars } from "react-icons/vsc";
+// ** import assets:
+import avater from "../../public/avater.jpeg";
+// ** import components:
+import Search from "./Search";
+
+// ** import state management:
 import { useAppDispatch } from "@/redux/hook";
 import { toggleMenu } from "@/redux/features/menuSlice";
 

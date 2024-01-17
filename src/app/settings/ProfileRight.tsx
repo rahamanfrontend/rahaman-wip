@@ -1,9 +1,12 @@
-import Typography from "@/components/typography";
-import { LockerIcon, PngIcon } from "../../../public/assets/svg/profileIcon";
-import FileUpload from "@/components/Shared/FileUpload";
-import InputBox from "@/components/Shared/InputBox";
-import { MetricesIcon1 } from "../../../public/assets/svg/Metrices";
+// ** import assets:
+import { LockerIcon } from "../../../public/assets/svg/profileIcon";
+
+// ** import third party :
 import { Button } from "@heathmont/moon-core-tw";
+
+// ** import components:
+import Typography from "@/components/typography";
+import InputBox from "@/components/Shared/InputBox";
 
 const ProfileRight = ({}) => {
    return (

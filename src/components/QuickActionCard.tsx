@@ -1,5 +1,6 @@
-import { NextPage } from "next";
+// ** import core packages:
 import { ReactNode } from "react";
+// ** import components
 import SvgIconContainer from "./SvgIconContainer";
 import Typography from "./typography";
 

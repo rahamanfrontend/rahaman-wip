@@ -1,4 +1,8 @@
-import Typography from "@/components/typography";
+// ** import core packages:
+
+import React from "react";
+
+// ** import assets:
 import {
    FilterIcon,
    SearchIcon,
@@ -6,8 +10,12 @@ import {
    StarIcon,
    ThreeDot,
 } from "../../../public/assets/svg/tableIcon";
+
+//** import third party :
 import { Table } from "@heathmont/moon-table-tw";
-import React from "react";
+
+// ** import components:
+import Typography from "@/components/typography";
 
 const makeData = (length: number) => {
    return Array.from("_".repeat(length)).map((_, index) => {

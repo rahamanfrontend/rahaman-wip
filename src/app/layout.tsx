@@ -1,8 +1,14 @@
+// ** import core packages:
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+// ** import assets:
 import "./globals.css";
+
+// ** import components:
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
+
+// ** state management:
 import StoreProvider from "@/redux/StoreProvider";
 
 const inter = Inter({ subsets: ["latin"] });

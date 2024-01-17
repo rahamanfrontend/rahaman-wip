@@ -1,7 +1,12 @@
-import { Button } from "@heathmont/moon-core-tw";
+// ** import core packages:
 import { Dispatch, ReactNode, SetStateAction } from "react";
-import Typography from "./typography";
+
+// ** import  assets:
 import styles from "./HospitalinfoCard.module.css";
+// ** import third party:
+import { Button } from "@heathmont/moon-core-tw";
+import Typography from "./typography";
+
 type THospitalInfoCard = {
    name: string;
    icon: ReactNode;
