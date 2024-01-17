@@ -43,7 +43,7 @@ const ProfileCard = ({}) => {
                Your Profile
             </Typography>
          </div>
-         <div className="pb-1  grid grid-cols-3  ">
+         <div className="pb-1  grid grid-cols-1 md:grid-cols-3  ">
             <div className="border-r border-gray-200 pl-6 pt-6 py-[29px] ">
                <div className="w-16 h-16 rounded-full  mb-3 ">
                   <Image
@@ -59,8 +59,8 @@ const ProfileCard = ({}) => {
                   subTitle="HMO ID: RET/15118/A"
                ></TitleGroup>
             </div>
-            <div className="col-span-2 p-6">
-               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div className="md:col-span-2 p-6">
+               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                   {userDetailsList.map((item, idx) => (
                      <TitleGroup
                         className="!flex-col-reverse"

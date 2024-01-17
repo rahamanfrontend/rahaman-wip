@@ -9,14 +9,14 @@ import { toggleMenu } from "@/redux/features/menuSlice";
 const Navbar = () => {
    const dispatch = useAppDispatch();
    return (
-      <header className="flex px-9 items-center justify-between py-3 w-full bg-white">
+      <header className="flex px-9 items-center justify-between gap-2 py-3 w-full bg-white">
          <div className="flex items-center justify-center gap-3">
             <VscThreeBars
                className="block lg:hidden"
                size={20}
                onClick={() => dispatch(toggleMenu())}
             />
-            <div >
+            <div>
                <Search></Search>
             </div>
          </div>
